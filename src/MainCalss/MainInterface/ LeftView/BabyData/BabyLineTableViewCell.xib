@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="48" id="KGk-i7-Jjw" customClass="BabyLineTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="47.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手表号码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pia-0W-nPY">
+                        <rect key="frame" x="15" y="0.0" width="150" height="47.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="oHw-QC-REg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="babyInfo_next" translatesAutoresizingMaskIntoConstraints="NO" id="M8B-i0-guL">
+                        <rect key="frame" x="430" y="0.0" width="9" height="47.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="3xW-IR-Qjr"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvq-oC-pdL">
+                        <rect key="frame" x="180" y="0.0" width="245" height="47.5"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUS-vF-Hht">
+                        <rect key="frame" x="0.0" y="47" width="449" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="aq6-3F-snk"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gk-bj-UTj">
+                        <rect key="frame" x="269" y="0.0" width="180" height="46.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJr-Kb-Hbg">
+                                <rect key="frame" x="0.0" y="0.0" width="70" height="46.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="z2g-pE-3I8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="  男孩" image="babyInfo_nosel">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" title="  男孩" image="babyInfo_sel"/>
+                                <connections>
+                                    <action selector="boyAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="l4u-au-jss"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daA-DY-yT8">
+                                <rect key="frame" x="95" y="0.0" width="70" height="46.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="acQ-pQ-Nn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="  女孩" image="babyInfo_nosel">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" title="  女孩" image="babyInfo_sel"/>
+                                <connections>
+                                    <action selector="boyAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xcB-gp-I0x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="daA-DY-yT8" firstAttribute="top" secondItem="5gk-bj-UTj" secondAttribute="top" id="BCX-0l-L0H"/>
+                            <constraint firstItem="FJr-Kb-Hbg" firstAttribute="top" secondItem="5gk-bj-UTj" secondAttribute="top" id="NZX-Zy-eRD"/>
+                            <constraint firstAttribute="trailing" secondItem="daA-DY-yT8" secondAttribute="trailing" constant="15" id="Tzb-KT-toc"/>
+                            <constraint firstAttribute="bottom" secondItem="daA-DY-yT8" secondAttribute="bottom" id="Vu8-uY-1Xn"/>
+                            <constraint firstAttribute="bottom" secondItem="FJr-Kb-Hbg" secondAttribute="bottom" id="m4x-yB-dOj"/>
+                            <constraint firstAttribute="width" constant="180" id="oVQ-Jn-ypy"/>
+                            <constraint firstItem="FJr-Kb-Hbg" firstAttribute="leading" secondItem="5gk-bj-UTj" secondAttribute="leading" id="yyO-JB-pNY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M8B-i0-guL" firstAttribute="leading" secondItem="Jvq-oC-pdL" secondAttribute="trailing" constant="5" id="24S-w7-nYQ"/>
+                    <constraint firstItem="pia-0W-nPY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6vE-4n-Vne"/>
+                    <constraint firstItem="Jvq-oC-pdL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ECS-zj-bH9"/>
+                    <constraint firstAttribute="bottom" secondItem="M8B-i0-guL" secondAttribute="bottom" id="O9A-sp-Qki"/>
+                    <constraint firstAttribute="bottom" secondItem="5gk-bj-UTj" secondAttribute="bottom" constant="1" id="YcH-ek-b0h"/>
+                    <constraint firstAttribute="trailing" secondItem="M8B-i0-guL" secondAttribute="trailing" constant="10" id="bCn-wU-PGK"/>
+                    <constraint firstAttribute="bottom" secondItem="pia-0W-nPY" secondAttribute="bottom" id="bSI-4Z-7sm"/>
+                    <constraint firstItem="5gk-bj-UTj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fP7-Wq-wHF"/>
+                    <constraint firstAttribute="trailing" secondItem="iUS-vF-Hht" secondAttribute="trailing" id="gGm-49-xau"/>
+                    <constraint firstAttribute="bottom" secondItem="iUS-vF-Hht" secondAttribute="bottom" id="gH8-Yz-Rao"/>
+                    <constraint firstItem="M8B-i0-guL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="p8o-bA-01k"/>
+                    <constraint firstAttribute="trailing" secondItem="5gk-bj-UTj" secondAttribute="trailing" id="pQW-Fk-WLu"/>
+                    <constraint firstItem="pia-0W-nPY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="r0m-dP-qIW"/>
+                    <constraint firstItem="Jvq-oC-pdL" firstAttribute="leading" secondItem="pia-0W-nPY" secondAttribute="trailing" constant="15" id="y09-fZ-XGV"/>
+                    <constraint firstItem="iUS-vF-Hht" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zHw-un-051"/>
+                    <constraint firstAttribute="bottom" secondItem="Jvq-oC-pdL" secondAttribute="bottom" id="zqh-TZ-GEL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImg" destination="M8B-i0-guL" id="MKI-x0-CjT"/>
+                <outlet property="boylBtn" destination="FJr-Kb-Hbg" id="N1a-qS-hcu"/>
+                <outlet property="girlBtn" destination="daA-DY-yT8" id="Sen-zi-hVz"/>
+                <outlet property="listLabel" destination="Jvq-oC-pdL" id="xuz-Mm-wrW"/>
+                <outlet property="sexBg" destination="5gk-bj-UTj" id="8qX-ln-WYK"/>
+                <outlet property="title" destination="pia-0W-nPY" id="lHT-cG-ZBh"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="-49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="babyInfo_next" width="9" height="16"/>
+        <image name="babyInfo_nosel" width="17" height="17"/>
+        <image name="babyInfo_sel" width="17" height="17"/>
+    </resources>
+</document>
